@@ -2,20 +2,18 @@ import { Award, ExternalLink } from "lucide-react";
 import { Section } from "./Section";
 import { Reveal } from "./Reveal";
 
-const CERT_LINK = "https://www.linkedin.com/posts/kajal-vyas-04a58b37a_introduction-to-generative-ai-studio-ugcPost-7415979447557701632-fTcQ";
-
 const certs = [
   {
     name: "Introduction to Generative AI Studio",
     issuer: "Google Cloud",
     year: "2025",
-    link: CERT_LINK,
+    link: "https://www.linkedin.com/posts/kajal-vyas-04a58b37a_introduction-to-generative-ai-studio-ugcPost-7415979447557701632-fTcQ",
   },
   {
     name: "Intro to Python",
-    issuer: "Online Certification",
+    issuer: "DataCamp",
     year: "2024",
-    link: CERT_LINK,
+    link: "https://www.datacamp.com/completed/statement-of-accomplishment/course/66cc5a58043787132901427cbafb1b6589050980",
   },
 ];
 
