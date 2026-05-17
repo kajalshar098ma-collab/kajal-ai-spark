@@ -1,6 +1,10 @@
-import { Github, ExternalLink, Calendar, Gamepad2, ListChecks, FileText } from "lucide-react";
+import { Github, ExternalLink } from "lucide-react";
 import { Section } from "./Section";
 import { Reveal } from "./Reveal";
+import saarthiImg from "@/assets/project-saarthi.png";
+import talentSortImg from "@/assets/project-talentsort.png";
+import stockImg from "@/assets/project-stock.png";
+import ticTacToeImg from "@/assets/project-tictactoe.png";
 
 const GITHUB = "https://github.com/kajalshar098ma-collab";
 
@@ -9,37 +13,33 @@ const projects = [
     name: "Sarthi",
     desc: "A productivity and time management application that helps users manage schedules, set goals, and improve daily productivity with a clean, focused interface.",
     tags: ["Python", "AI", "Productivity"],
-    icon: Calendar,
-    repo: `${GITHUB}`,
+    image: saarthiImg,
+    repo: GITHUB,
     demo: "#",
-    accent: "from-violet-500 to-fuchsia-500",
   },
   {
     name: "Talent Sort",
-    desc: "A resume-building and talent management platform that helps users create professional resumes and showcase their skills to recruiters.",
+    desc: "A smart resume builder and direct hiring platform that helps users create professional resumes and showcase their skills to recruiters.",
     tags: ["Web", "HTML/CSS", "UX"],
-    icon: FileText,
-    repo: `${GITHUB}`,
+    image: talentSortImg,
+    repo: GITHUB,
     demo: "#",
-    accent: "from-cyan-400 to-blue-500",
+  },
+  {
+    name: "Stock Data Handler",
+    desc: "A Python data visualization project that fetches and plots stock market data — built with pandas and matplotlib to analyze price trends over time.",
+    tags: ["Python", "Pandas", "Matplotlib"],
+    image: stockImg,
+    repo: GITHUB,
+    demo: "#",
   },
   {
     name: "Tic Tac Toe Game",
-    desc: "An interactive Tic Tac Toe game built with modern UI, smooth animations, and clean game-state logic.",
+    desc: "An interactive Tic Tac Toe game built with clean UI and game-state logic — play, win, and restart with a smooth experience.",
     tags: ["JavaScript", "Game", "UI"],
-    icon: Gamepad2,
-    repo: `${GITHUB}`,
+    image: ticTacToeImg,
+    repo: GITHUB,
     demo: "#",
-    accent: "from-pink-500 to-rose-500",
-  },
-  {
-    name: "To-Do List App",
-    desc: "A task management application with a minimal, clean design — add, complete, and organize tasks effortlessly.",
-    tags: ["Web", "Productivity", "UI"],
-    icon: ListChecks,
-    repo: `${GITHUB}`,
-    demo: "#",
-    accent: "from-emerald-400 to-teal-500",
   },
 ];
 
@@ -55,10 +55,15 @@ export function Projects() {
         {projects.map((p, i) => (
           <Reveal key={p.name} delay={i * 100}>
             <article className="glass neon-glow-hover group relative flex h-full flex-col overflow-hidden rounded-2xl">
-              <div className={`relative flex h-48 items-center justify-center bg-gradient-to-br ${p.accent}`}>
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.3),transparent_50%)]" />
-                <p.icon className="h-20 w-20 text-white/90 transition-transform duration-500 group-hover:scale-110" strokeWidth={1.2} />
-                <div className="absolute bottom-3 left-3 rounded-full bg-black/30 px-3 py-1 font-mono text-xs text-white backdrop-blur">
+              <div className="relative h-56 overflow-hidden bg-secondary/40">
+                <img
+                  src={p.image}
+                  alt={`${p.name} project screenshot`}
+                  loading="lazy"
+                  className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/10 to-transparent" />
+                <div className="absolute bottom-3 left-3 rounded-full bg-black/40 px-3 py-1 font-mono text-xs text-white backdrop-blur">
                   {p.name.toLowerCase().replace(/\s+/g, "-")}
                 </div>
               </div>
