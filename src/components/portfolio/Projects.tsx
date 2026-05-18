@@ -5,6 +5,7 @@ import saarthiImg from "@/assets/project-saarthi.png";
 import talentSortImg from "@/assets/project-talentsort.png";
 import stockImg from "@/assets/project-stock.png";
 import ticTacToeImg from "@/assets/project-tictactoe.png";
+import todoImg from "@/assets/project-todo.png";
 
 const GITHUB = "https://github.com/kajalshar098ma-collab";
 
@@ -15,7 +16,7 @@ const projects = [
     tags: ["Python", "AI", "Productivity"],
     image: saarthiImg,
     repo: GITHUB,
-    demo: "#",
+    demo: "https://kajalshar098ma-collab.github.io/sarthi-app/",
   },
   {
     name: "Talent Sort",
@@ -23,7 +24,7 @@ const projects = [
     tags: ["Web", "HTML/CSS", "UX"],
     image: talentSortImg,
     repo: GITHUB,
-    demo: "#",
+    demo: "https://kajalshar098ma-collab.github.io/talentsort-/",
   },
   {
     name: "Stock Data Handler",
@@ -31,7 +32,7 @@ const projects = [
     tags: ["Python", "Pandas", "Matplotlib"],
     image: stockImg,
     repo: GITHUB,
-    demo: "#",
+    demo: null,
   },
   {
     name: "Tic Tac Toe Game",
@@ -39,7 +40,15 @@ const projects = [
     tags: ["JavaScript", "Game", "UI"],
     image: ticTacToeImg,
     repo: GITHUB,
-    demo: "#",
+    demo: "https://kajalshar098ma-collab.github.io/tic-tac-toe-game/",
+  },
+  {
+    name: "Advanced To-Do App",
+    desc: "A feature-rich to-do application with task categories, due dates, search, filters (All/Completed/Pending), and a dark mode toggle for a smooth productivity experience.",
+    tags: ["JavaScript", "HTML/CSS", "Productivity"],
+    image: todoImg,
+    repo: GITHUB,
+    demo: "https://kajalshar098ma-collab.github.io/to-do-list/",
   },
 ];
 
@@ -89,14 +98,24 @@ export function Projects() {
                   >
                     <Github className="h-3.5 w-3.5" /> GitHub
                   </a>
-                  <a
-                    href={p.demo}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex flex-1 items-center justify-center gap-2 rounded-full bg-gradient-neon px-4 py-2 text-xs font-semibold text-white"
-                  >
-                    <ExternalLink className="h-3.5 w-3.5" /> Live Demo
-                  </a>
+                  {p.demo ? (
+                    <a
+                      href={p.demo}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex flex-1 items-center justify-center gap-2 rounded-full bg-gradient-neon px-4 py-2 text-xs font-semibold text-white"
+                    >
+                      <ExternalLink className="h-3.5 w-3.5" /> Live Demo
+                    </a>
+                  ) : (
+                    <span
+                      aria-disabled="true"
+                      title="Live demo coming soon"
+                      className="inline-flex flex-1 cursor-not-allowed items-center justify-center gap-2 rounded-full border border-border bg-secondary/30 px-4 py-2 text-xs font-semibold text-muted-foreground opacity-60"
+                    >
+                      <ExternalLink className="h-3.5 w-3.5" /> Demo Soon
+                    </span>
+                  )}
                 </div>
               </div>
             </article>

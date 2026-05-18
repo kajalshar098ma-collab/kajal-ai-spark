@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Menu, X, Moon, Sun, Sparkles } from "lucide-react";
+import { Menu, X, Moon, Sun, Sparkles, Download } from "lucide-react";
 
 const links = [
   { href: "#home", label: "Home" },
@@ -50,6 +50,13 @@ export function Navbar() {
               {l.label}
             </a>
           ))}
+          <a
+            href="/resume.pdf"
+            download
+            className="neon-glow-hover inline-flex items-center gap-2 rounded-full bg-gradient-neon px-4 py-2 text-xs font-semibold text-white"
+          >
+            <Download className="h-3.5 w-3.5" /> Resume
+          </a>
           <button
             onClick={() => setLight((v) => !v)}
             className="rounded-full border border-border p-2 transition-colors hover:bg-secondary"
@@ -81,9 +88,17 @@ export function Navbar() {
                 {l.label}
               </a>
             ))}
+            <a
+              href="/resume.pdf"
+              download
+              onClick={() => setOpen(false)}
+              className="mt-2 flex items-center gap-2 rounded-md bg-gradient-neon px-3 py-2 text-sm font-semibold text-white"
+            >
+              <Download className="h-4 w-4" /> Download Resume
+            </a>
             <button
               onClick={() => setLight((v) => !v)}
-              className="mt-2 flex items-center gap-2 rounded-md border border-border px-3 py-2 text-sm"
+              className="mt-1 flex items-center gap-2 rounded-md border border-border px-3 py-2 text-sm"
             >
               {light ? <Moon className="h-4 w-4" /> : <Sun className="h-4 w-4" />}
               Toggle theme
