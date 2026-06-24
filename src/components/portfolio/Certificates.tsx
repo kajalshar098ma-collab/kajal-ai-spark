@@ -13,13 +13,13 @@ const certs = [
     name: "Databricks Fundamentals",
     issuer: "Simplilearn",
     year: "2026",
-    link: "/simplilearn-databricks-certificate.pdf",
+    link: "https://www.linkedin.com/posts/kajal-vyas-04a58b37a_skillup-simplilearn-skillup-share-7475447088990961665-0qvj/",
   },
   {
     name: "AI Web Development Internship",
     issuer: "InAmigos Foundation",
     year: "2026",
-    link: "/inamigos-internship-certificate.png",
+    link: "https://www.linkedin.com/posts/kajal-vyas-04a58b37a_webdevelopment-internship-amigosfoundation-activity-7474664159763394560-mZPY",
   },
 ];
 
