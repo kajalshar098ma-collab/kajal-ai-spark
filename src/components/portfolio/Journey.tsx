@@ -5,6 +5,7 @@ const milestones = [
   { year: "2022 – 2023", title: "Class 10th Completed", text: "Scored 88% — built strong foundations and early curiosity for tech." },
   { year: "2024 – 2025", title: "Class 12th Science", text: "Completed senior secondary with 75%, choosing the path of engineering." },
   { year: "2025 – 2029", title: "B.Tech CSE (AI/ML)", text: "Began my degree at Shri Vishwakarma Skill University, diving deep into AI." },
+  { year: "May – Jun 2026", title: "AI Web Dev Internship", text: "Completed an online internship at InAmigos Foundation in AI Web Development, shipping real-world features." },
   { year: "Now", title: "Building Projects", text: "Started shipping AI and web development projects — learning by doing." },
 ];
 
