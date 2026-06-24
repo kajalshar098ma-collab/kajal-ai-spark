@@ -15,6 +15,12 @@ const certs = [
     year: "2026",
     link: "/simplilearn-databricks-certificate.pdf",
   },
+  {
+    name: "AI Web Development Internship",
+    issuer: "InAmigos Foundation",
+    year: "2026",
+    link: "/inamigos-internship-certificate.png",
+  },
 ];
 
 export function Certificates() {
