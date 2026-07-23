@@ -21,6 +21,12 @@ const certs = [
     year: "2026",
     link: "https://www.linkedin.com/posts/kajal-vyas-04a58b37a_webdevelopment-internship-amigosfoundation-activity-7474664159763394560-mZPY",
   },
+  {
+    name: "Internshala Student Partner — Offer Letter",
+    issuer: "Internshala",
+    year: "2026",
+    link: "/internshala-offer-letter.png",
+  },
 ];
 
 export function Certificates() {

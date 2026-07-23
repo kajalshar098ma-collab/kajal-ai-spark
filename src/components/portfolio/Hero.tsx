@@ -65,7 +65,7 @@ export function Hero() {
               View Projects <ArrowRight className="h-4 w-4" />
             </a>
             <a
-              href="/resume.pdf"
+              href="/resume.jpg"
               download
               className="neon-glow-hover inline-flex items-center gap-2 rounded-full border border-border glass px-6 py-3 text-sm font-semibold"
             >
