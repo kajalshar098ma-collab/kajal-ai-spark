@@ -6,6 +6,7 @@ import talentSortImg from "@/assets/project-talentsort.png";
 import stockImg from "@/assets/project-stock.png";
 import ticTacToeImg from "@/assets/project-tictactoe.png";
 import todoImg from "@/assets/project-todo.png";
+import attendanceImg from "@/assets/project-attendance.png";
 
 const GITHUB = "https://github.com/kajalshar098ma-collab";
 
