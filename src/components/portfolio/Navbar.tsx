@@ -51,7 +51,7 @@ export function Navbar() {
             </a>
           ))}
           <a
-            href="/resume.pdf"
+            href="/resume.jpg"
             download
             className="neon-glow-hover inline-flex items-center gap-2 rounded-full bg-gradient-neon px-4 py-2 text-xs font-semibold text-white"
           >
@@ -89,7 +89,7 @@ export function Navbar() {
               </a>
             ))}
             <a
-              href="/resume.pdf"
+              href="/resume.jpg"
               download
               onClick={() => setOpen(false)}
               className="mt-2 flex items-center gap-2 rounded-md bg-gradient-neon px-3 py-2 text-sm font-semibold text-white"
