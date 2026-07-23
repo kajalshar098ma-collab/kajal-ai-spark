@@ -51,6 +51,14 @@ const projects = [
     repo: GITHUB,
     demo: "https://kajalshar098ma-collab.github.io/to-do-list/",
   },
+  {
+    name: "Smart Attendance System",
+    desc: "An AI-based attendance system built with Python and Computer Vision — features user login/registration and automated attendance tracking with a clean dark UI.",
+    tags: ["Python", "Computer Vision", "AI"],
+    image: attendanceImg,
+    repo: "https://github.com/kajalshar098ma-collab/smart-attendance-system",
+    demo: null,
+  },
 ];
 
 export function Projects() {
